@@ -16,8 +16,8 @@ a{
 }
 
 .container{
-  max-width: 1300px;
-  padding: 15px;
+  max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .subtitle{
@@ -60,4 +60,103 @@ a{
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+
+.insurance{
+  overflow: hidden;
+  background: #363839;
+  padding: 120px 0 100px;
+  &__subtitle{
+    text-align: center;
+  }
+  &__title{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+  }
+  &__info{
+    text-align: center;
+    color: #ACB4BF;
+    max-width: 730px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-bottom: 70px;
+  }
+  &__content{
+    max-width: 978px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 147px;
+      top: 17px;
+      width: 707px;
+      height: 33px;
+      background-image: url(../images/strokes.svg);
+    }
+  }
+  &__item{
+    text-align: center;
+    position: relative;
+    max-width: 234px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: #5A6482;
+      border-radius: 50%;
+      top: 20px;
+      z-index: 9;
+    }
+  }
+  &__item-2{
+    &::after{
+      top: 17px;
+      left: 90px;
+    }
+  }
+  &__item-3{
+    max-width: 256px;
+    &::after{
+      top: 8px;
+      left: 105px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 200px;
+      top: -145px;
+      right: -296px;
+      width: 422px;
+      height: 243px;
+      background-image: url(../images/confetti.png);
+    }
+  }
+  &__item-img{
+    position: relative;
+    z-index: 10;
+  }
+  &__item-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  &__item-info{
+    font-size: 16px;
+    line-height: 26px;
+    color: #ACB4BF;
+  }
+  &__btn{
+    display: block;
+    margin: 0 auto;
+  }
 }
