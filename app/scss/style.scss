@@ -22,16 +22,7 @@
   &__log-in{
     margin-right: 40px;
   }
-  &__right-btn{
-    font-size: 14px;
-    font-weight: 600;
 
-    padding: 13px 31px;
-    background: none;
-    border: 1px solid rgba(29, 37, 60, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
-  }
 }
 .menu{
   &__list{
@@ -151,16 +142,9 @@
     left: -40px;
   }
   &__signature{
-    padding: 20px;
-    background: #FFFFFF;
-    box-shadow: 3px 4px 34px rgba(66, 71, 77, 0.11);
-    border-radius: 5px;
     position: absolute;
     bottom: -30px;
     left: -50px;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 28px;
     z-index: 100;
   }
 }
@@ -226,5 +210,329 @@
     position: absolute;
     right: 0;
     bottom: -30px;
+  }
+}
+
+.insurance{
+  overflow: hidden;
+  background: #363839;
+  padding: 120px 0 100px;
+  &__subtitle{
+    text-align: center;
+  }
+  &__title{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+  }
+  &__info{
+    text-align: center;
+    color: #ACB4BF;
+    max-width: 730px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-bottom: 70px;
+  }
+  &__content{
+    max-width: 978px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 147px;
+      top: 17px;
+      width: 707px;
+      height: 33px;
+      background-image: url(../images/strokes.svg);
+    }
+  }
+  &__item{
+    text-align: center;
+    position: relative;
+    max-width: 234px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: #5A6482;
+      border-radius: 50%;
+      top: 20px;
+      z-index: 9;
+    }
+  }
+  &__item-2{
+    &::after{
+      top: 17px;
+      left: 90px;
+    }
+  }
+  &__item-3{
+    max-width: 256px;
+    &::after{
+      top: 8px;
+      left: 105px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 200px;
+      top: -145px;
+      right: -296px;
+      width: 422px;
+      height: 243px;
+      background-image: url(../images/confetti.png);
+    }
+  }
+  &__item-img{
+    position: relative;
+    z-index: 10;
+  }
+  &__item-title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  &__item-info{
+    font-size: 16px;
+    line-height: 26px;
+    color: #ACB4BF;
+  }
+  &__btn{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.need{
+  padding: 148px 0 164px;
+  background: $bg-1;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    margin-right: 102px;
+    position: relative;
+  }
+  &__dots{
+    position: absolute;
+    left: -40px;
+    top: -30px;
+  }
+  &__img{
+    position: relative;
+    z-index: 10;
+  }
+  &__signature{
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+    z-index: 100;
+  }
+  &__subtitle{
+    margin-bottom: 30px;
+  }
+  &__title{
+    margin-bottom: 25px;
+  }
+  &__info{
+    margin-bottom: 25px;
+  }
+}
+
+.cards{
+  padding: 160px 0 130px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-title{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    min-height: 85px;
+    margin-bottom: 20px;
+  }
+  &__item-info{
+    font-size: 16px;
+    line-height: 19px;
+    color: $secondary;
+  }
+  &__item-link{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    height: 323px;
+    padding: 40px 22px 33px;
+    &:nth-child(1){
+      background: rgba(169, 216, 255, 0.3);
+      .cards__item-link{
+        color: #7CAFDD;
+      }
+      .cards__item-title{
+        color: #7CAFDD;
+      }
+    }
+    &:nth-child(2){
+      background: rgba(255, 174, 104, 0.3);
+      .cards__item-link{
+        color: #E79751;
+      }
+      .cards__item-title{
+        color: #E79751;
+      }
+    }
+    &:nth-child(3){
+      background: rgba(250, 82, 64, 0.3);
+      .cards__item-link{
+        color: #FA5240;
+      }
+      .cards__item-title{
+        color: #FA5240;
+      }
+    }
+    &:nth-child(4){
+      background: rgba(18, 111, 133, 0.3);
+      .cards__item-link{
+        color: #126F85;
+      }
+      .cards__item-title{
+        color: #126F85;
+      }
+    }
+  }
+}
+
+.started{
+  background: #E5F3FE;
+  padding: 105px 0 85px;
+  .container{
+    position: relative;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  &__info{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__img{
+    position: absolute;
+  }
+  &__img-1{
+    left: -60px;
+    bottom: -85px;
+  }
+  &__img-2{
+    right: 100px;
+    bottom: -85px;
+  }
+}
+
+
+.footer{
+  &__top{
+    display: flex;
+    padding: 70px 0 40px;
+  }
+  &__left{
+    max-width: 320px;
+    margin-right: 245px;
+  }
+  &__logo{
+    margin-bottom: 30px;
+    display: block;
+  }
+  &__info{
+    font-size: 14px;
+    line-height: 23px;
+    color: $secondary;
+    margin-bottom: 22px;
+  }
+  &__social-list{
+    display: flex;
+  }
+  &__search{
+    margin-bottom: 25px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    input{
+      height: 100%;
+      width: 100%;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border: 1px solid #CCCCCC;
+      outline: none;
+    }
+    button{
+      background: #126F85;
+      border: none;
+      width: 84px;
+      height: 100%;
+      outline: none;
+      cursor: pointer;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+
+      font-size: 14px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+  }
+  &__social-item{
+    margin-right: 34px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col-title{
+    margin-bottom: 22px;
+
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #1D253C;
+  }
+  &__item{
+    margin-bottom: 19px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    line-height: 19px;
+    color: #5A6482;
+  }
+  &__bottom{
+    padding: 18px 0;
+    background: $bg-2;
+  }
+  &__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-btn{
+    font-weight: 400;
   }
 }
