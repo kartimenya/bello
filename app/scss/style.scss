@@ -22,18 +22,12 @@
   &__log-in{
     margin-right: 40px;
   }
-
 }
 .menu{
   &__list{
     display: flex;
     align-items: center;
-  }
-  &__item{
-    margin-right: 35px;
-    &:last-child{
-      margin-right: 0;
-    }
+    gap: 35px;
   }
   &__link{
     transition: .3s;
@@ -81,6 +75,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
   }
   &__img{
     img{
@@ -116,6 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
   }
   &__right{
     max-width: 483px;
@@ -174,6 +170,7 @@
   &__content{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
   &__item{
     background: #fff;
@@ -213,6 +210,7 @@
   }
 }
 
+// insurance
 .insurance{
   overflow: hidden;
   background: #363839;
@@ -239,13 +237,14 @@
     margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     position: relative;
     &::after{
       content: '';
       position: absolute;
       left: 147px;
       top: 17px;
-      width: 707px;
+      width: calc(100% - 298px);
       height: 33px;
       background-image: url(../images/strokes.svg);
     }
@@ -311,6 +310,7 @@
   }
 }
 
+//need
 .need{
   padding: 148px 0 164px;
   background: $bg-1;
@@ -318,9 +318,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
   }
   &__left{
-    margin-right: 102px;
     position: relative;
   }
   &__dots{
@@ -338,6 +338,9 @@
     right: 50px;
     z-index: 100;
   }
+  &__right{
+    max-width: 500px;
+  }
   &__subtitle{
     margin-bottom: 30px;
   }
@@ -349,11 +352,14 @@
   }
 }
 
+// cards
 .cards{
   padding: 160px 0 130px;
   &__inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   &__item-title{
     font-weight: 600;
@@ -418,6 +424,7 @@
   }
 }
 
+// started
 .started{
   background: #E5F3FE;
   padding: 105px 0 85px;
@@ -438,6 +445,10 @@
   &__img-1{
     left: -60px;
     bottom: -85px;
+    @media (max-width: 1160px) {
+      position: static;
+      margin-bottom: -88px;
+    }
   }
   &__img-2{
     right: 100px;
@@ -445,15 +456,15 @@
   }
 }
 
-
+// footer
 .footer{
   &__top{
     display: flex;
+    justify-content: space-between;
     padding: 70px 0 40px;
   }
   &__left{
     max-width: 320px;
-    margin-right: 245px;
   }
   &__logo{
     margin-bottom: 30px;
@@ -503,7 +514,7 @@
     }
   }
   &__right{
-    width: 100%;
+    flex-basis: 550px;
     display: flex;
     justify-content: space-between;
   }
@@ -531,8 +542,13 @@
   &__bottom-inner{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-text{
+    color: $secondary;
   }
   &__bottom-btn{
     font-weight: 400;
   }
 }
+@import "media";

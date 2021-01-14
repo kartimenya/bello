@@ -28,15 +28,22 @@ a{
   color: $red;
 }
 .title{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   color: $primary;
+  @media (max-width: 900px) {
+    font-size: 34px;
+  }
 }
 .info{
   font-size: 19px;
   line-height: 30px;
   color: $secondary;
+  @media (max-width: 900px) {
+    font-size: 17px;
+    line-height: 28px;
+  }
 }
 .mini-link{
   font-weight: 500;
@@ -58,6 +65,10 @@ a{
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  transition: .3s;
+  &:hover{
+    background: #F22222;
+  }
 }
 .btn-light{
   font-size: 14px;

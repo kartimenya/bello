@@ -1,0 +1,195 @@
+// media 870
+@media (max-width: 870px) {
+  .header{
+    &__log-in{
+      margin-right: 20px;
+    }
+  }
+  .menu{
+    &__list{
+      gap: 25px;
+    }
+  }
+  // statistics
+  .statistics{
+    padding: 50px 0;
+    &__inner{
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-around;
+    }
+    &__right{
+      max-width: 100%;
+      order: -1;
+    }
+    &__subtitle{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__title{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &__info{
+      margin-bottom: 15px;
+    }
+    &__info{
+      text-align: center;
+    }
+  }
+
+  // help
+  .help{
+    padding: 100px 0;
+    &__inner{
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: space-around;
+    }
+    &__right{
+      max-width: 100%;
+      order: -1;
+    }
+    &__img{
+      img{
+        width: 100%;
+      }
+    }
+    &__subtitle{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__title{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &__info{
+      margin-bottom: 15px;
+    }
+    &__info{
+      text-align: center;
+    }
+  }
+
+  // safe
+  .safe{
+    &__subtitle{
+      margin-bottom: 10px;
+    }
+    &__title{
+      margin-bottom: 15px;
+    }
+    &__info{
+      margin-bottom: 15px;
+    }
+    &__content{
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  // insurance
+  .insurance{
+
+  }
+  // need
+  .need{
+    padding: 70px 0;
+    &__inner{
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: space-around;
+    }
+    &__right{
+      max-width: 100%;
+      order: -1;
+    }
+    &__img{
+      img{
+        width: 100%;
+      }
+    }
+    &__subtitle{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__title{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &__info{
+      margin-bottom: 15px;
+    }
+    &__info{
+      text-align: center;
+    }
+  }
+
+  // cards
+  .cards{
+    &__inner{
+      justify-content: space-around;
+      gap: 10px;
+    }
+  }
+
+  // started
+  .started{
+    &__img-1{
+      position: static;
+    }
+    &__img-2{
+      right: 100px;
+      bottom: -85px;
+    }
+  }
+
+  // footer
+  .footer{
+    &__top{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+  }
+}
+
+// media 690
+@media (max-width: 690px) {
+  .header{
+
+  }
+  .menu{
+    &__body{
+      position: fixed;
+      top: -100%;
+      right: 0;
+      width: 200px;
+      height: 100vh;
+      background: #dcf5e2;
+    }
+    &__list{
+      flex-direction: column;
+      gap: 0;
+      margin-top: 50px;
+    }
+    &__link{
+      display: block;
+      padding: 25px 0;
+      &:hover{
+        border-bottom: 1px solid transparent;
+        padding: 25px 0;
+        color: inherit;
+      }
+    }
+    &__item{
+      text-align: center;
+      border-top: 3px solid #bbb1ee;
+      width: 100%;
+      &:last-child{
+        border-bottom: 3px solid #bbb1ee;
+      }
+    }
+  }
+}

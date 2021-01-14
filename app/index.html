@@ -17,17 +17,19 @@
         </a>
         <!-- navigation -->
         <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Life insurance</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Why Bello</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Help</a>
-            </li>
-          </ul>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Life insurance</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Why Bello</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <div class="header__right">
@@ -204,6 +206,7 @@
     </div>
   </section>
 
+  <!-- cards -->
   <section class="cards">
     <div class="container">
       <div class="cards__inner">
@@ -243,16 +246,17 @@
     </div>
   </section>
 
+  <!-- started -->
   <section class="started">
     <div class="container">
-      <img class="started__img started__img-1" src="images/started-1.png" alt="">
-      <img class="started__img started__img-2" src="images/started-2.png" alt="">
       <h3 class="started__title title">Get Started Today.</h3>
       <p class="started__info info">Join the Bello community of people who are securing their financial future.</p>
       <button class="insurance__btn btn" type="button" name="button">
         <span>Get my price</span>
         <img src="images/btn-arrow.svg" alt="">
       </button>
+      <img class="started__img started__img-1" src="images/started-1.png" alt="">
+      <img class="started__img started__img-2" src="images/started-2.png" alt="">
     </div>
   </section>
 
@@ -349,13 +353,12 @@
           </div>
         </div>
       </div>
-
     </div>
     <!-- footer bottem -->
     <div class="footer__bottom">
       <div class="container">
         <div class="footer__bottom-inner">
-          <p>© 2020 Bello insurance Services LLC. All right reserved.</p>
+          <p class="footer__bottom-text">© 2020 Bello insurance Services LLC. All right reserved.</p>
           <button class="footer__bottom-btn btn-light" type="button" name="button">Get my price</button>
         </div>
       </div>
