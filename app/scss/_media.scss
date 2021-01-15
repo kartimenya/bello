@@ -10,6 +10,13 @@
       gap: 25px;
     }
   }
+
+  .main{
+    &__title{
+      font-size: 44px;
+      line-height: 48px;
+    }
+  }
   // statistics
   .statistics{
     padding: 50px 0;
@@ -91,7 +98,7 @@
 
   // insurance
   .insurance{
-
+    padding: 50px 0;
   }
   // need
   .need{
@@ -147,6 +154,12 @@
 
   // footer
   .footer{
+    &__left {
+      max-width: 100%;
+    }
+    &__search{
+      width: 100%;
+    }
     &__top{
       flex-wrap: wrap;
       justify-content: space-around;
@@ -190,6 +203,56 @@
       &:last-child{
         border-bottom: 3px solid #bbb1ee;
       }
+    }
+  }
+
+  // help
+  .help{
+    &__signature{
+      left: 10px;
+    }
+  }
+
+  // safe
+  .safe{
+    &__umbrella{
+      width: 300px;
+      top: -70px;
+    }
+  }
+  // started
+  .started{
+    overflow: hidden;
+    &__img-1{
+      width: 300px;
+      margin-left: -50px;
+    }
+    &__img-2{
+      right: 30px;
+      width: 50px;
+    }
+  }
+
+  // insurance
+  .insurance{
+    &__content::after {
+      display: none;
+    }
+    &__item-3::before{
+      display: none;
+    }
+    &__content{
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-around;
+    }
+  }
+
+  // footer
+  .footer{
+    &__right{
+      flex-wrap: wrap;
+      gap: 50px;
     }
   }
 }
