@@ -46,10 +46,15 @@ a{
   }
 }
 .mini-link{
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   color: #126F86;
+  span{
+    margin-right: 5px;
+  }
   path{
     fill:#126F86;
   }

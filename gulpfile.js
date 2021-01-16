@@ -33,6 +33,7 @@ function browsersync() {
 
 function scripts() {
   return src([
+    'node_modules/wow.js/dist/wow.js',
     'node_modules/jquery/dist/jquery.js',
     'app/js/main.js'
   ])
